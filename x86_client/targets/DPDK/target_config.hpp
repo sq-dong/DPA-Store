@@ -1,0 +1,7 @@
+#pragma once
+
+#undef TARGET_NAME
+#define TARGET_NAME "DPDK"
+
+#undef CONCURRENCY_MODE
+#define CONCURRENCY_MODE FULL_CUSTOM

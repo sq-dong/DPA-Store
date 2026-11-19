@@ -1,0 +1,41 @@
+# Build trees
+**/build/
+**/build-*/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/compile_commands.json
+*.o
+*.a
+*.so
+*.dylib
+
+# Experiment outputs / figures / logs — keep on disk; only exclude from git
+scripts/paper_repro/out/
+**/*.log
+*.pdf
+*.png
+!scripts/paper_repro/paper_refs/**
+
+# Working traces (keep only the shipped tarballs under traces/)
+traces/*.trace
+traces/extracted/
+# GitHub rejects files >100MB; keep bulk tarball local / use Release assets or LFS
+traces/bulk_trace.tar.gz
+/tmp/
+
+# Editor / OS / cores
+.DS_Store
+*.swp
+*~
+core
+core.*
+*.core
+.vscode/
+.idea/
+*.user
+
+# Python
+__pycache__/
+*.pyc
+.venv/
